@@ -1,28 +1,23 @@
-# Traffic-Signs-Classifier
+# CarND-LeNet-Lab
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-Overview
+![LeNet-5 Architecture](lenet.png)
+Implement the LeNet-5 deep neural network model.
 
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train a model so it can decode traffic signs from natural images by using the German Traffic Sign Dataset. After the model is trained, you will then test your model program on new images of traffic signs you find on the web, or, if you're feeling adventurous pictures of traffic signs you find locally!
+### Dependencies
+This lab requires:
 
-Dependencies
+* [TensorFlow](https://www.tensorflow.org/)
 
-This project requires Python 3.5 and the following Python libraries installed:
+Use [Anaconda](https://www.continuum.io/downloads) to install the dependencies:
 
-Jupyter
-NumPy
-SciPy
-scikit-learn
-TensorFlow
-Matplotlib
-Pandas (Optional)
-Run this command at the terminal prompt to install OpenCV. Useful for image processing:
+1. `conda env create -f environment.yml`
+2. `source activate CarND-LeNet-Lab`
 
-conda install -c https://conda.anaconda.org/menpo opencv3
-Dataset
+### GPU
+If you have access to an NVIDIA GPU, you can accelerate the training of your network by using TensorFlow on a GPU.
 
-Download the dataset. This is a pickled dataset in which we've already resized the images to 32x32.
-Clone the project and start the notebook.
-git clone https://github.com/udacity/CarND-Traffic-Signs
-cd CarND-Traffic-Signs
-jupyter notebook Traffic_Signs_Recognition.ipynb
-Follow the instructions in the Traffic_Signs_Recognition.ipynb notebook.
+1. Install the core dependencies (see above)
+2. Install [CUDA](https://developer.nvidia.com/cuda-downloads)
+3. Install [cuDNN](https://developer.nvidia.com/cudnn)
+4. Install TensorFlow with GPU support: `pip install tensorflow-gpu`
